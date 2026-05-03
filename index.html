@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayHub - Roblox Replica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="https://static.rbxcdn.com/images/Logos/Roblox_Logo_300x90.png" alt="PlayHub Logo">
+                <h1>PlayHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#avatar">Avatar</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#friends">Friends</a></li>
+                    <li><a href="#more">More</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn btn-primary">Login</button>
+                <button class="btn btn-secondary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Welcome to PlayHub!</h2>
+                    <p>Discover an endless world of immersive experiences created by a global community.</p>
+                    <button class="btn btn-cta">Explore Games</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="game-showcase">
+            <div class="container">
+                <h3>Popular Games</h3>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/300x180/FF6B6B/FFFFFF?text=Adventure+World" alt="Adventure World">
+                        <h4>Adventure World</h4>
+                        <p>Explore vast lands and battle mythical creatures.</p>
+                        <button class="btn btn-play" data-game-url="https://gdevelop.io/game-example/super-platformer/">Play Now</button>
+                    </div>
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/300x180/4ECDC4/FFFFFF?text=Tycoon+Empire" alt="Tycoon Empire">
+                        <h4>Tycoon Empire</h4>
+                        <p>Build your empire from the ground up.</p>
+                        <button class="btn btn-play" data-game-url="https://www.addictinggames.com/strategy/idle-mine-eco-tycoon">Play Now</button>
+                    </div>
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/300x180/45B7D1/FFFFFF?text=Obstacle+Course" alt="Obstacle Course">
+                        <h4>Obstacle Course</h4>
+                        <p>Test your skills in challenging parkour maps.</p>
+                        <button class="btn btn-play" data-game-url="https://html5.gamedistribution.com/rvvASx8E/index.html">Play Now</button>
+                    </div>
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/300x180/FED766/FFFFFF?text=Roleplay+City" alt="Roleplay City">
+                        <h4>Roleplay City</h4>
+                        <p>Live your dream life in a bustling virtual city.</p>
+                        <button class="btn btn-play" data-game-url="https://games.gdevelop-app.com/game-c866dc68-fbdf-45fc-883a-4f65c9285038/index.html">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Modal -->
+        <div id="gameModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modalGameTitle"></h3>
+                <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PlayHub. Not affiliated with Roblox Corporation. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
